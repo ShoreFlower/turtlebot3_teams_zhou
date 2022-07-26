@@ -1,0 +1,23 @@
+ <launch>
+    
+    <node pkg="turtlebot3_teams_zhou" type="tb3_tf_broadcaster"
+          args="/tb3_0" name="robot_0_tf_broadcaster" />
+    <node pkg="turtlebot3_teams_zhou" type="tb3_tf_broadcaster"
+          args="/tb3_1" name="robot_1_tf_broadcaster" />
+    <node pkg="turtlebot3_teams_zhou" type="tb3_tf_broadcaster"
+          args="/tb3_2" name="robot_2_tf_broadcaster" />
+    <node pkg="turtlebot3_teams_zhou" type="tb3_tf_broadcaster"
+          args="/tb3_3" name="robot_3_tf_broadcaster" />
+    <node pkg="turtlebot3_teams_zhou" type="tb3_tf_broadcaster"
+          args="/tb3_4" name="robot_4_tf_broadcaster" />
+   
+    <node pkg="turtlebot3_teams_zhou" type="leader_vel_pub"
+          name="leader" />
+    <node pkg="turtlebot3_teams_zhou" type="tb3_tf_listener"
+          name="follower" />
+    <node pkg="turtlebot3_teams_zhou" type="tb3_tf_listener1"
+          name="follower1" />
+    <node pkg="turtlebot3_teams_zhou" type="tb3_tf_listener2"
+          name="follower2" />
+  </launch>
+
